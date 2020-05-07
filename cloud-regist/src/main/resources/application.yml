@@ -1,0 +1,17 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: cloud-regist
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+#开启断路器
+feign:
+  hystrix:
+    enabled: true

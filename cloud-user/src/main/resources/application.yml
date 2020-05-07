@@ -1,0 +1,26 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: cloud-user
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  datasource:
+    url: jdbc:mysql://47.106.70.5/cloud_user?characterEncoding=utf-8&useSSL=false
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+mybatis-plus:
+  type-aliases-package: com.dtdhehe.user.entity
+  configuration:
+    map-underscore-to-camel-case: true
+logging:
+  level:
+    com.example.clockmallservice.mapper: debug

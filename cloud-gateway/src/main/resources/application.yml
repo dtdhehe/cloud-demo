@@ -1,0 +1,24 @@
+server:
+  port: 8008
+spring:
+  application:
+    name: cloud-gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: user-service
+          uri: lb://cloud-user
+          predicates:
+            - Path=/cloud-user/**
+        - id: regist-service
+          uri: lb://cloud-regist
+          predicates:
+            - Path=/cloud-regist/**
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/

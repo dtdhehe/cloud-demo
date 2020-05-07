@@ -9,6 +9,10 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>cloud-eureka</module>
+        <module>cloud-user</module>
+        <module>cloud-common</module>
+        <module>cloud-gateway</module>
+        <module>cloud-regist</module>
     </modules>
     <packaging>pom</packaging>
 
@@ -24,6 +28,20 @@
         <java.version>1.8</java.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.8</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.45</version>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
