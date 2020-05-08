@@ -18,4 +18,9 @@ public class UserFeignHystrix implements UserFeign {
     public ResultVO addUser(User user) {
         return ResultVO.failed("服务不可用，新增失败！");
     }
+
+    @Override
+    public ResultVO findByUsername(String username) {
+        return ResultVO.failed("服务不可用，查询失败！");
+    }
 }

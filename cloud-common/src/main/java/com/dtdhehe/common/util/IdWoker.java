@@ -1,4 +1,4 @@
-package com.dtdhehe.common.utils;
+package com.dtdhehe.common.util;
 
 /**
  * @author Xie_东

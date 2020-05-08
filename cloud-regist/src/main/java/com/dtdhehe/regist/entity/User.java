@@ -2,6 +2,8 @@ package com.dtdhehe.regist.entity;
 
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author Xie_东
  * @version 1.0.0
@@ -9,7 +11,7 @@ import lombok.Data;
  * @description
  **/
 @Data
-public class User {
+public class User implements Serializable {
 
     private Long id;
     private String username;

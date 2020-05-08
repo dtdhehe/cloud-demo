@@ -1,6 +1,6 @@
 package com.dtdhehe.user;
 
-import com.dtdhehe.common.utils.IdWoker;
+import com.dtdhehe.common.util.IdWoker;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;

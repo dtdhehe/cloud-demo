@@ -1,7 +1,7 @@
 package com.dtdhehe.user.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.dtdhehe.common.utils.IdWoker;
+import com.dtdhehe.common.util.IdWoker;
 import com.dtdhehe.user.entity.User;
 import com.dtdhehe.user.mapper.UserMapper;
 import com.dtdhehe.user.service.UserService;

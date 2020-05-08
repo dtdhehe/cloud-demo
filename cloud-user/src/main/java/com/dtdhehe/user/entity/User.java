@@ -3,6 +3,8 @@ package com.dtdhehe.user.entity;
 import com.baomidou.mybatisplus.annotation.TableName;
 import lombok.Data;
 
+import java.io.Serializable;
+
 /**
  * @author Xie_东
  * @version 1.0.0
@@ -11,7 +13,7 @@ import lombok.Data;
  **/
 @Data
 @TableName("tb_user")
-public class User {
+public class User implements Serializable {
 
     private Long id;
     private String username;
