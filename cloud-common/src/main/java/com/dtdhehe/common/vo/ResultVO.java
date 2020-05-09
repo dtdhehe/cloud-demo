@@ -9,7 +9,7 @@ import lombok.Data;
  * @description
  **/
 @Data
-public class ResultVO {
+public class ResultVO<T> {
 
     private static final Integer SUCCESS = 200;
     private static final Integer FAILED = 500;
@@ -17,7 +17,7 @@ public class ResultVO {
 
     private Integer code;
     private String msg;
-    private Object data;
+    private T data;
 
     /**
      * 返回成功，带消息及数据
@@ -25,8 +25,8 @@ public class ResultVO {
      * @param object
      * @return
      */
-    public static ResultVO success(String msg, Object object){
-        ResultVO resultVO = new ResultVO();
+    public static <T> ResultVO success(String msg, T object){
+        ResultVO<T> resultVO = new ResultVO<>();
         resultVO.setCode(SUCCESS);
         resultVO.setMsg(msg);
         resultVO.setData(object);

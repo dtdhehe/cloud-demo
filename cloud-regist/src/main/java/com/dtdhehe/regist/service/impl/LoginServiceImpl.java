@@ -27,8 +27,8 @@ public class LoginServiceImpl implements LoginService {
     @Override
     public Map<String,Object> access(User user) {
         Map<String,Object> resultMap = new HashMap<>(8);
-        ResultVO result = userFeign.findByUsername(user.getUsername());
-        User dbUser = (User)result.getData();
+        ResultVO<User> result = userFeign.findByUsername(user.getUsername());
+        User dbUser = result.getData();
         boolean isAccess = false;
         if (dbUser != null){
             isAccess = true;

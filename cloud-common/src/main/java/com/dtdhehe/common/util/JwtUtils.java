@@ -19,7 +19,7 @@ public class JwtUtils {
     /**
      * 签名私钥
      */
-    private static final String KEY = "";
+    private static final String KEY = "dtdhehe";
     /**
      * 签名的失效时间
      */

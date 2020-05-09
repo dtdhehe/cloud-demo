@@ -32,6 +32,6 @@ public interface UserFeign {
      * @return
      */
     @GetMapping("/user/username")
-    ResultVO findByUsername(@RequestParam("username") String username);
+    ResultVO<User> findByUsername(@RequestParam("username") String username);
 
 }
