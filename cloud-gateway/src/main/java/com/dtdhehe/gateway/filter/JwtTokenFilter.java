@@ -19,7 +19,6 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.nio.charset.StandardCharsets;
-import java.util.Arrays;
 
 /**
  * @author Xie_东
@@ -30,7 +29,7 @@ import java.util.Arrays;
 @Component
 public class JwtTokenFilter implements GlobalFilter, Ordered {
 
-    @Value("${skipAuthUrls}")
+    @Value("${jwt.skipAuthUrls}")
     private String[] skipAuthUrls;
 
     private static final String EXPIRE_ERROR_MESSAGE = "Allowed clock skew";

@@ -23,7 +23,7 @@ public class JwtUtils {
     /**
      * 签名的失效时间
      */
-    private static final Long TTL = 60*60*1000L;
+    private static final Long TTL = 10*60*1000L;
 
     /**
      * 设置认证token
@@ -54,7 +54,11 @@ public class JwtUtils {
      * 解析token字符串获取clamis
      */
     public static Claims parseJwt(String token) {
-        return Jwts.parser().setSigningKey(KEY).parseClaimsJws(token).getBody();
+        Claims claims = Jwts.parser().setSigningKey(KEY).parseClaimsJws(token).getBody();
+        Date expiration = claims.getExpiration();
+        System.out.println(expiration);
+
+        return claims;
     }
 
 }
