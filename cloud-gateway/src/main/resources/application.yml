@@ -14,10 +14,10 @@ spring:
           uri: lb://cloud-user
           predicates:
             - Path=/cloud-user/**
-        - id: regist-service
-          uri: lb://cloud-regist
+        - id: auth-service
+          uri: lb://cloud-auth
           predicates:
-            - Path=/cloud-regist/**
+            - Path=/cloud-auth/**
 eureka:
   client:
     service-url:
