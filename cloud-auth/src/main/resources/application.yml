@@ -2,7 +2,7 @@ server:
   port: 8002
 spring:
   application:
-    name: cloud-regist
+    name: cloud-auth
   servlet:
     multipart:
       max-file-size: 10MB

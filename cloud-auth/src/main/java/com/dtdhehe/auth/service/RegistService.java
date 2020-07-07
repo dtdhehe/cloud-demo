@@ -1,7 +1,7 @@
-package com.dtdhehe.regist.service;
+package com.dtdhehe.auth.service;
 
 import com.dtdhehe.common.vo.ResultVO;
-import com.dtdhehe.regist.entity.User;
+import com.dtdhehe.auth.entity.User;
 
 /**
  * @author Xie_东

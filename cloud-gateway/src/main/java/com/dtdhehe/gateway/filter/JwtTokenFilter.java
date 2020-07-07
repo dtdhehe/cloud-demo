@@ -26,7 +26,7 @@ import java.nio.charset.StandardCharsets;
  * @date 2020/5/12 17:51
  * @description
  **/
-//@Component
+@Component
 public class JwtTokenFilter implements GlobalFilter, Ordered {
 
     @Value("${jwt.skipAuthUrls}")

@@ -1,9 +1,8 @@
-package com.dtdhehe.regist.controller;
+package com.dtdhehe.auth.controller;
 
 import com.dtdhehe.common.vo.ResultVO;
-import com.dtdhehe.regist.entity.User;
-import com.dtdhehe.regist.feign.UserFeign;
-import com.dtdhehe.regist.service.RegistService;
+import com.dtdhehe.auth.entity.User;
+import com.dtdhehe.auth.service.RegistService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

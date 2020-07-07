@@ -1,6 +1,6 @@
-package com.dtdhehe.regist.service;
+package com.dtdhehe.auth.service;
 
-import com.dtdhehe.regist.entity.User;
+import com.dtdhehe.auth.entity.User;
 
 import java.util.Map;
 

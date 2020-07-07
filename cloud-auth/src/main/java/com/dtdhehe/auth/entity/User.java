@@ -1,4 +1,4 @@
-package com.dtdhehe.regist.entity;
+package com.dtdhehe.auth.entity;
 
 import lombok.Data;
 

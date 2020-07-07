@@ -1,8 +1,8 @@
-package com.dtdhehe.regist.feign.hystric;
+package com.dtdhehe.auth.feign.hystric;
 
 import com.dtdhehe.common.vo.ResultVO;
-import com.dtdhehe.regist.entity.User;
-import com.dtdhehe.regist.feign.UserFeign;
+import com.dtdhehe.auth.entity.User;
+import com.dtdhehe.auth.feign.UserFeign;
 import org.springframework.stereotype.Component;
 
 /**

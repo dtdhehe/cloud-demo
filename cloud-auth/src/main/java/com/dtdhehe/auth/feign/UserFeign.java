@@ -1,8 +1,8 @@
-package com.dtdhehe.regist.feign;
+package com.dtdhehe.auth.feign;
 
 import com.dtdhehe.common.vo.ResultVO;
-import com.dtdhehe.regist.entity.User;
-import com.dtdhehe.regist.feign.hystric.UserFeignHystrix;
+import com.dtdhehe.auth.entity.User;
+import com.dtdhehe.auth.feign.hystric.UserFeignHystrix;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
