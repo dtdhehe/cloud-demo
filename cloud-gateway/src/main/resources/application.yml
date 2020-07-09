@@ -23,4 +23,4 @@ eureka:
     service-url:
       defaultZone: http://localhost:8888/eureka/
 jwt:
-  skipAuthUrls:
+  skipAuthUrls: /cloud-auth
